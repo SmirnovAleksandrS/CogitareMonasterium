@@ -5,13 +5,13 @@
 
 #define RoomName "room1"
 
-#define WIFI_ssid "*************"
-#define WIFI_passwd "***********"
-#define WIFI_tryConnect 10
-#define WIFI_delayBetwenConect 100
+#define WIFI_ssid "MERCUSYS_3114"
+#define WIFI_passwd "Der_Paroll!"
+#define WIFI_tryConnect 20
+#define WIFI_delayBetwenConect 500
 
 #define MQTT_clientId "ESP32TestClient"
-#define MQTT_serverId "192.168.1.35"
+#define MQTT_serverId "192.168.1.110"
 #define MQTT_login "TestClient"
 #define MQTT_passwd "TestClient"
 #define MQTT_port 1883

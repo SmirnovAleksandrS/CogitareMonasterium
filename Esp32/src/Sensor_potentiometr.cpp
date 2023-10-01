@@ -33,8 +33,8 @@ bool Sensor_potentiometr::iteration(){
             // Serial.print(volt);
             // Serial.println(" parrots");
         #endif
-        if (millis() - time > 100){
-            if ( abs(voltage - volt) >= 100 ){
+        if (millis() - time > 1000){
+            if ( abs(voltage - volt) >= 600 ){
                 char bufer[6];  //т.к максимум 4096
                 sprintf(bufer, "%i", volt);
                 flag = inte->send(top, bufer);

@@ -25,7 +25,7 @@ bool Sensor_DHT11::callback (char* topic, byte* message, unsigned int length){
 
 bool Sensor_DHT11::iteration(){
     // условие на время (датчик нельзя опрашивать чаще 5 секунд)
-    if (inte->loop() && (millis() - time > 5000)){
+    if (inte->loop() && (millis() - time > 20000)){
         bool flag_t = true, flag_h = true;
         sensors_event_t event;
         int bufer_i = 0;
